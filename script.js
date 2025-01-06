@@ -9,6 +9,12 @@ const display = document.querySelector('.display')
 
 generateBtn.addEventListener("click", () => {
     const passwordLength = Number(passwordLengthInput.value);
+
+    if(passwordLength <= 0){
+        alert("Enter password length!!!");
+        return;
+    }
+
     let addUppercaseLetters = false;
     let addLowercaseLetters = false;
     let addNumbers = false;
@@ -26,6 +32,10 @@ generateBtn.addEventListener("click", () => {
         addSymbols = true;
     }
 
+    if(!uppercaseCheckbox.checked && !lowercaseCheckbox.checked && !numbersCheckbox.checked && !symbolsCheckbox.checked){
+        alert("Check at least one box!!!");
+        return;
+    }
 
     let password = '';
     const uppercaseLetters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
