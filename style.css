@@ -1,0 +1,76 @@
+:root{
+    --mirage: #1b1f3b;
+    --martinique: #2b2d54;
+    --easy-bay: #3b3d72;
+    --victoria: #4c4f94;
+    --scampi: #5c5ea3;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: var(--mirage);
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container{
+    border: 1px solid gainsboro;
+    padding: 10px;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-container h1{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.display{
+    height: 30px;
+    width: 400px;
+    background-color: gainsboro;
+    border-radius: 5px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-div{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.generate-btn, .copy-to-clipboard-btn{
+    height: 30px;
+    width: 150px;
+    background-color: var(--victoria);
+    color: white;
+    font-size: 15px;
+}
+
+.pass-length-div, .uppercase-div, .lowercase-div, .numbers-div, .symbols-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#pass-length-input{
+    width: 50px;
+}
